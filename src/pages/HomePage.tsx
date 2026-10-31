@@ -4,6 +4,7 @@ import { useQuery } from '@tanstack/react-query';
 import { api } from '../lib/api';
 import { CourseCard } from '../components/CourseCard';
 import { CourseCardSkeleton } from '../components/Skeleton';
+import heroImg from "../assets/images/hero_learnhub_platform_1793389667561.jpg";
 import {
   Search,
   BookOpen,
@@ -210,7 +211,7 @@ export const HomePage: React.FC = () => {
             <div className="lg:col-span-5 relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-200/80 dark:border-slate-800/80 aspect-[4/3] group">
                 <img
-                  src="/src/assets/images/hero_learnhub_platform_1793389667561.jpg"
+                  src={heroImg}
                   alt="Modern online learning workspace"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover group-hover:scale-102 transition-transform duration-500"
